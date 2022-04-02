@@ -1,12 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Enter The Year : ");
-int year = int.Parse(Console.ReadLine());
-if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0))
+Console.WriteLine("Enter the Power of 2 :");
+int n = int.Parse(Console.ReadLine());
+int i = 0;
+int powerofTwo = 1;
+while (i <= n)
 {
-    Console.WriteLine("It is leap year");
-}
-else
-{
-    Console.WriteLine("It is not leap year");
+    Console.WriteLine(i + " " + powerofTwo);
+    powerofTwo = 2 * powerofTwo;
+    i = i + 1;
 }
 
