@@ -1,12 +1,23 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Enter the Power of 2 :");
-int n = int.Parse(Console.ReadLine());
-int i = 0;
-int powerofTwo = 1;
-while (i <= n)
+Console.WriteLine(" Welcome to Swap To Numbers   ");
+
 {
-    Console.WriteLine(i + " " + powerofTwo);
-    powerofTwo = 2 * powerofTwo;
-    i = i + 1;
+    int number_One,
+    number_Two,
+    temp;
+
+    Console.Write("\nEnter the First Number : ");
+    number_One = Convert.ToInt32(Console.ReadLine());
+
+    Console.Write("\nEnter the Second Number : ");
+    number_Two = Convert.ToInt32(Console.ReadLine());
+
+    temp = number_One;
+    number_One = number_Two;
+    number_Two = temp;
+    Console.Write("\nAfter Swapping : ");
+    Console.Write("\nFirst Number : " + number_One);
+    Console.Write("\nSecond Number : " + number_Two);
+    Console.ReadLine();
 }
 
